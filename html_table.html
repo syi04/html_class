@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Table</title>
+
+	<style>
+		table, tr, th, td
+		{
+			border: 2px solid red;
+			border-collapse: collapse;
+		}
+		th,td
+		{
+			padding:45px;
+		}
+		th
+		{
+			background-color: blue;
+			color:yellow;
+		}
+		td:nth-child(odd)
+		{
+			background-color: yellowgreen;
+		}
+		td:nth-child(even)
+		{
+			background-color:lightskyblue ;
+		}
+		td:hover
+		{
+			background-color: grey;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Basic Table</h1>
+
+	<table style="width: 100%">
+		<caption>Table 1: Basic HTML Table</caption>
+		<tr>
+			<th style="width:30%">Name</th>
+			<th style="width:15%">Student ID</th>
+			<th style="width:45%">Picture</th>
+			<th style="width:10%">Phone Num</th>
+		</tr>
+
+		<tr>
+			<td>Nur Ainatul Mardiah Mat Nawi</td>
+			<td>2010360232</td>
+			<td><img src="images/cute_kuromi.jpg" style="height: 100px;"></td>
+			<td>01990990999</td>
+		</tr>
+		<tr style="height:250px">
+			<td>Nur Ainatul Mardiah Mat Nawi</td>
+			<td>2010360232</td>
+			<td><img src="images/hello_kitty.png" style="height: 100px;"></td>
+			<td>01990990999</td>
+		</tr>
+		<tr>
+			<td>Nur Ainatul Mardiah Mat Nawi</td>
+			<td>2010360232</td>
+			<td><img src="images/kitty_comel.jpg" style="height: 100px;"></td>
+			<td>01990990999</td>
+		</tr>
+	</table>
+
+
+	<h1>Colspan</h1>
+
+	<table style="width:100%;">
+
+		<tr>
+			<th>Name</th>
+			<th>Student Id</th>
+			<th colspan="3">Subject</th>
+		</tr>
+
+		<tr>
+			<td>Nur Aina</td>
+			<td>10203020</td>
+			<td>IMS343</td>
+			<td>IMS456</td>
+			<td>IMS789</td>
+		</tr>
+
+		
+	</table>
+
+	<h1>Rowspan</h1>
+
+	<table style="width:70%">
+
+		<tr>
+			<th>Name</th>
+			<td>Aina</td>
+		</tr>
+
+		<tr>
+			<th rowspan="2">EMail</th>
+			<td>aina@gmail</td>
+		</tr>
+		<tr>
+			<td>nuraina@gmail</td>
+		</tr>
+		<tr>
+			<th>Alamat</th>
+			<td rowspan="2">Kelantan</td>
+		</tr>
+		<tr>
+			<th>Alamat Surat</th>
+
+		</tr>
+
+		
+	</table>
+
+
+
+
+
+</body>
+</html>

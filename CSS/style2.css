@@ -1,0 +1,22 @@
+body
+{
+  font-family: Arial;
+  font-size: 16px;
+  color: black;
+}
+h1
+{
+	font-family: georgia;
+	font-family: Georgia;
+    color: blue;
+    background-color: lightgray;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+h2
+{
+	font-family: Georgia;
+    color: darkred;
+    font-size: 18px;
+}

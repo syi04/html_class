@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>html javascript</title>
+</head>
+<body>
+
+	<h2>1)Javascript  can change your content</h2>
+
+	<p id="content1">Do you know about my dreams</p>
+	<button type="button" onclick='document.getElementById("content1").innerHTML ="I dont know to"'>Click to change </button>
+
+	<h2> 2) Javascript can change your style</h2>
+
+	<p id="style1"> Nak Tahu Tak Teka Teki</p>
+
+	<script>
+		function myStyle() 
+		{
+			document.getElementById("style1").style.fontSize ="35px";
+			document.getElementById("style1").style.color = "bluevoilet";
+			document.getElementById("style1").style.backgroundColor ="lightyellow";
+		}
+	</script>
+	<button type="button" onclick="myStyle()">Click me</button>
+
+	<h2>3) Javascript do image manipulation</h2>
+
+	<script>
+		function lampu(a)
+		{
+			var pic;
+			if (a==2)
+			{
+				pic="images/pic_bulboff.gif"
+			}
+			else
+			{
+				pic="images/pic_bulbon.gif"
+			}
+			document.getElementById('gambar').src=pic;
+		}
+	</script>
+
+	<img src="images/pic_bulboff.gif" id="gambar" width="100" height="200">
+	<p>
+		<button type="button" onclick="lampu(1)">Switch ON</button>
+		<button type="button" onclick="lampu(2)">Switch OFF</button>
+	</p>
+
+	<h2>Alert Box</h2>
+
+	<script>
+		
+		{
+			alert("Assalamulaikum.\n Welcome to my page")
+		}
+	</script>
+
+
+</body>
+</html>

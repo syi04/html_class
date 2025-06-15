@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS Exercises</title>
+
+    <link rel="stylesheet" type="text/css" href="CSS/style3.css">
+
+</head>
+<body>
+	<div class="container">
+    <div class="main-content" id="main-content">
+        <h2>Curriculum Vitae</h2>
+        <div id="content-area">
+            <p>Welcome to my CV!</p>
+        </div>
+    </div>
+    <div class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('personal')">Personal data</a></li>
+                <li><a href="#" onclick="showSection('education')">Education</a></li>
+                <li><a href="#" onclick="showSection('experience')">Professional experience</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<script>
+function showSection(section) {
+    const content = document.getElementById('content-area');
+    if (section === 'personal') {
+        content.innerHTML = `
+            <h3>Personal data</h3>
+            <p><strong>Name:</strong> Azamat<br>
+            <strong>Surname:</strong> Azamat<br>
+            <strong>Date of birth:</strong> 30.07.74<br>
+            <strong>Place of birth:</strong> Bishkek, Kyrgyzstan</p>
+        `;
+    } else if (section === 'education') {
+        content.innerHTML = `
+            <h3>Education</h3>
+            <ul>
+                <li>2005–2009: Computer Engineering in the Technical University of Kyrgyzstan in Bishkek</li>
+                <li>2001–2005: High School "Manas" in Osh</li>
+                <li>1995–2001: Primary school</li>
+            </ul>
+        `;
+    } else if (section === 'experience') {
+        content.innerHTML = `
+            <h3>Professional experience</h3>
+            <ul>
+                <li>2007–2009: Computer teacher in High School in Bishkek</li>
+                <li>2005–2007: Secretary of Department of Software</li>
+            </ul>
+        `;
+    }
+}
+</script>
+
+</body>
+</html>

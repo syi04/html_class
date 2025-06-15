@@ -1,0 +1,36 @@
+body
+{
+	background-color: lightpink;
+}
+h1
+{
+	color: lightyellow;
+	font-family: papyrus;
+	font-size: 45px;
+	text-align: center;
+	border: 3px dotted darkseagreen;
+}
+h3
+{
+	color: orange;
+	border: 3px dotted purple;
+}
+p
+{
+	color: darkgreen;
+	font-size: 20px;
+}
+table,tr,th,td
+{
+	border: 3px solid black;
+	border-collapse: collapse;
+
+}
+th
+{
+	background-color: red;
+}
+tr:hover
+{
+   background-color: lightyellow;
+}

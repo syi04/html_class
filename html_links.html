@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Links</title>
+
+	<style>
+		a:link
+		{
+			color: darkgreen;
+			background-color: transparent;
+			text-decoration: none;
+		}
+		a:visited
+		{
+			color: purple;
+			background-color: transparent;
+			text-decoration: none;
+		}
+		a:hover
+		{
+			color: hotpink;
+			background-color: yellow;
+			text-decoration: underline;
+		}
+		a:active
+		{
+			color: red;
+			background-color: transparent;
+			text-decoration: none;
+		}
+	</style>
+
+
+
+</head>
+<body>
+
+	<h1>INTERNAL LINK</h1>
+	<a href ="html_quotation.html">HTML Quotation</a>
+
+	<h1>EXTERNAL LINK</h1>
+	<a href="https://uitm.edu.my/index.php/en/">Uitm Links</a>/
+
+	<h1>TARGET ATTRRIBUTES</h1>
+	<a href="html_style.html" target="_self">HTML STYLE</a>
+	<br>
+	<a href="html_images.html" target="_blank">HTML Images</a>
+
+	<h1>IMAGES AS LINKS</h1>
+	<a href="html_formatting.html" target="_blank"title="HTML BUTTON"><img src="button/button.png.png"></a>
+	<br>
+	<a href="html_quotation.html" target="_top"title="Button HTML"><img src="button/button_html.png"></a>
+
+	<h1>BUTTON AS LINK</h1>
+	<button onclick="document.location='html_formatting.html'">HTML Formatting</button>
+
+</body>
+</html>
